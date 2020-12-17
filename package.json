@@ -2,7 +2,10 @@
   "name": "mongo-manager",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./build/index.js",
+  "bin": {
+    "mongodb-manager": "./build/index.js"
+  },
   "scripts": {
     "dev": "nodemon",
     "build": "rimraf ./build && tsc",
@@ -29,5 +32,8 @@
     "rimraf": "^3.0.2",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "commander": "^6.2.1"
   }
 }
